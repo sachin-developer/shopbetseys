@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+    display: inline-block;
+}
 :root{
     --karla:'Karla', sans-serif;
     --brown:#5a4741;
@@ -16,4 +20,78 @@ body{
 .container{
     width: 100%;
     max-width: 1300px;
+}
+
+/* Common Css for All Screens */
+/* .promoBlock */
+.promoBlock{
+    background-color: var(--brown);
+    color: white;
+}
+.promoMessage{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.promoLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promoLinks .counts{
+position: relative;
+}
+.promoLinks .counts::before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -45%;
+    left:70%;
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+    content: "0";
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    color: white;
+    text-align: center;
+    background-color: var(--brown);
+}
+/* .promoBlock */
+
+/* menuBlock */
+.menuBlock{
+    padding: 0em 1em;
+}
+/* menuBlock */
+
+@media(max-width:500px){
+.promoBlock{
+    text-align: center;
+    padding: 1em;
+}
+.promoMessage{
+    font-size: 0.9rem;
+}
+.menuBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+}
+.navToggle{
+    font-size: 1.2rem;
+}
+.logo img{
+    width: 30%;
+    margin-left: 9em;
+}
+.promoLinks{
+    font-size: 1rem;
+}
+.promoLinks a{
+    margin: 0rem 0.6rem;
+    color: var(--brown);
+}
 }
