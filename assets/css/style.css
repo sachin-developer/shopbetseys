@@ -8,6 +8,12 @@ img{
     width: 100%;
     display: inline-block;
 }
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 :root{
     --karla:'Karla', sans-serif;
     --brown:#5a4741;
@@ -32,15 +38,15 @@ body{
     text-transform: uppercase;
     font-weight: 400;
 }
-.promoLinks{
+.menuLinks{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.promoLinks .counts{
+.menuLinks .counts{
 position: relative;
 }
-.promoLinks .counts::before{
+.menuLinks .counts::before{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +72,20 @@ position: relative;
 }
 /* menuBlock */
 
+/* navBlock */
+.submenu1,.submenu2{
+    background-color: white;
+    display: none;
+}
+.menu li{
+    padding: 1em 0.5em;
+    font-size: 1.3rem;
+}
+.menu li a{
+    color: var(--brown);
+}
+/* navBlock */
+
 @media(max-width:500px){
 .promoBlock{
     text-align: center;
@@ -84,14 +104,59 @@ position: relative;
     font-size: 1.2rem;
 }
 .logo img{
-    width: 30%;
+    width: 35%;
     margin-left: 9em;
 }
-.promoLinks{
-    font-size: 1rem;
+.menuLinks{
+    font-size: 1.3rem;
 }
-.promoLinks a{
+.menuLinks a{
     margin: 0rem 0.6rem;
     color: var(--brown);
 }
+.navBlock{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-right: 1.5px solid #d8d8d8;
+    transition: 0.3s linear;
+    transform: translateX(-100%);
 }
+.navForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--brown);
+    border-bottom: 1.5px solid #d8d8d8;
+}
+.navSearch,
+.navForm button{
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0em 0.2em;
+}
+.navSearchButton,.closeMenu{
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.navSearch{
+    padding: 1em 0.6em;
+}
+.menu li{
+    border-bottom: 1.5px solid #d8d8d8;
+}
+.submenu1,
+.submenu2{
+    width: 100%;
+}
+.has-dropdown > a{
+    display: flex;
+    justify-content: space-between;
+}
+.has-dropdown .fa-chevron-right{
+    transform: rotate(90deg);
+}
+/* 500px Media Query End Here */ }
