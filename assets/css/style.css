@@ -75,11 +75,11 @@ position: relative;
 /* navBlock */
 .submenu1,.submenu2{
     background-color: white;
-    display: none;
+   
 }
 .menu li{
-    padding: 1em 0.5em;
-    font-size: 1.3rem;
+    padding: 0.4em 0.5em;
+    font-size: 1.1rem;
 }
 .menu li a{
     color: var(--brown);
@@ -117,18 +117,21 @@ position: relative;
 .navBlock{
     position: absolute;
     top: 0;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100vh;
     background-color: white;
-    border-right: 1.5px solid #d8d8d8;
     transition: 0.3s linear;
     transform: translateX(-100%);
+}
+.menu{
+    background-color: white;
 }
 .navForm{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--brown);
+    padding: 0em 0.5em;
     border-bottom: 1.5px solid #d8d8d8;
 }
 .navSearch,
@@ -140,17 +143,33 @@ position: relative;
 }
 .navSearchButton,.closeMenu{
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .navSearch{
     padding: 1em 0.6em;
+    font-size: 0.9rem;
 }
 .menu li{
     border-bottom: 1.5px solid #d8d8d8;
 }
+.has-dropdown{
+    position: relative;
+}
 .submenu1,
 .submenu2{
+    left:0;
     width: 100%;
+    display: none;
+    overflow: hidden;
+}
+[id^=subcat]:checked + ul{
+    display: block;
+}
+[id^=subcat]:checked + ul.submenu1{
+    background-color: #e5e2e2;
+}
+[id^=subcat]:checked + ul.submenu2{
+    background-color: #d6d5d5;
 }
 .has-dropdown > a{
     display: flex;
@@ -159,4 +178,17 @@ position: relative;
 .has-dropdown .fa-chevron-right{
     transform: rotate(90deg);
 }
+.menu li:last-child img{
+    margin-left: 10%;
+    width: 80%;
+}
+.has-dropdown > label{
+    display: flex;
+    justify-content: space-between;
+    color: var(--brown);
+}
+.has-dropdown > input[type=checkbox]{
+    display: none;
+}
+
 /* 500px Media Query End Here */ }

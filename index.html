@@ -41,8 +41,8 @@
         <div>
             <form action="" class="navForm">
                <input type="text" class="navSearch" placeholder="Search Products Here">
-               <button type="submit"><i class="fa fa-search" id="navSearchButton"></i></button>
-               <button class="closeMenu" id="closeMenu"><i class="fa fa-times"></i></button>
+               <button type="submit" class="navSearchButton"><i class="fas fa-search" ></i></button>
+               <button class="closeMenu" id="closeMenu"><i class="fas fa-times"></i></button>
             </form>
         </div>
         <nav>
@@ -50,10 +50,12 @@
                 <li><a href="#" class="menu-link">Home</a></li>
                 <li><a href="#" class="menu-link">New Arrivals</a></li>
                 <li class="has-dropdown">
-                    <a href="#" class="subCat"><span>Clothing</span> <span><i class="fas fa-chevron-right"></i></span></a>
+                    <label for="subcat-A"><span>Clothing</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                    <input type="checkbox" id="subcat-A">
                     <ul class="submenu1">
                         <li class="has-dropdown">
-                            <a href="#" class="subCat"><span>Sweatshirts</span> <span><i class="fas fa-chevron-right"></i></span></a>
+                            <label for="subcat-AA"><span>Sweatshirts</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AA">
                         <ul class="submenu2">
                             <li><a href="#" class="menu-link">Crewnecks</a></li>
                             <li><a href="#" class="menu-link">Hoodies</a></li>
@@ -61,16 +63,18 @@
                         </ul>
                         </li>
                         <li class="has-dropdown ">
-                            <a href="#" class="subCat"><span>Blouses</span> <span><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="submenu2">
+                            <label for="subcat-AB"><span>Blouses</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AB">                        
+                            <ul class="submenu2">
                             <li><a href="#" class="menu-link">Long Sleeves</a></li>
                             <li><a href="#" class="menu-link">Short sleeves</a></li>
                             <li><a href="#" class="menu-link">Cold shoulder blouses</a></li>
                         </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#" class=" subCat"><span>Cardigans</span> <span><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="submenu2">
+                            <label for="subcat-AC"><span>Cardigans</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AC">                        
+                            <ul class="submenu2">
                             <li><a href="#" class="menu-link">Light Cardigans</a></li>
                             <li><a href="#" class="menu-link">Knit Cardigans</a></li>
                             <li><a href="#" class="menu-link">Tunic Cardigans</a></li>
@@ -79,8 +83,9 @@
                         </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#" class="subCat"><span>Bottoms</span> <span><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="submenu2">
+                            <label for="subcat-AD"><span>Bottoms</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AD">                        
+                            <ul class="submenu2">
                             <li><a href="#" class="menu-link">Leggings</a></li>
                             <li><a href="#" class="menu-link">Jeans</a></li>
                             <li><a href="#" class="menu-link">Jeggings</a></li>
@@ -90,8 +95,9 @@
                         </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#" class="subCat"><span>Tees & Tanks</span> <span><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="submenu2">
+                            <label for="subcat-AE"><span>Tees & Tanks</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AE">                        
+                            <ul class="submenu2">
                             <li><a href="#" class="menu-link">Betsey's basics</a></li>
                             <li><a href="#" class="menu-link">Tanks</a></li>
                             <li><a href="#" class="menu-link">Tees</a></li>
@@ -102,8 +108,9 @@
                         </ul>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#" class="subCat"><span>Dresses</span> <span><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="submenu2">
+                            <label for="subcat-AF"><span>Dresses</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                            <input type="checkbox" id="subcat-AF">                        
+                            <ul class="submenu2">
                             <li><a href="#" class="menu-link">Maxi</a></li>
                             <li><a href="#" class="menu-link">Tunic dresses</a></li>
                             <li><a href="#" class="menu-link">Short sleeve dresses</a></li>
@@ -121,7 +128,8 @@
                     </ul>
                 </li>
                 <li class="has-dropdown">
-                    <a href="#" class="menu-link"  id="2"><span>Footwear</span> <span><i class="fas fa-chevron-down"></i></span> </a>
+                    <label for="subcat-B"><span>Footwear</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                    <input type="checkbox" id="subcat-B">                    
                     <ul class="submenu1">
                         <li><a href="#" class="menu-link">Sandals</a></li>
                         <li><a href="#" class="menu-link">Flats</a></li>
@@ -131,7 +139,8 @@
                     </ul>
                 </li>
                 <li class="has-dropdown">
-                    <a href="#" class="menu-link"  id="3"><span>Accessories</span> <span><i class="fas fa-chevron-down"></i></span> </a>
+                    <label for="subcat-C"><span>Accessories</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                    <input type="checkbox" id="subcat-C">
                     <ul class="submenu1">
                         <li><a href="#" class="menu-link">Handbags</a></li>
                         <li><a href="#" class="menu-link">Jewellery</a></li>
@@ -140,7 +149,8 @@
                     </ul>
                 </li>
                 <li class="has-dropdown">
-                    <a href="#" class="menu-link"  id="2"><span>Betsey's Boquets</span> <span><i class="fas fa-chevron-down"></i></span> </a>
+                    <label for="subcat-D"><span>Betsey's Boquets</span> <span><i class="fas fa-chevron-right"></i></span></label>
+                    <input type="checkbox" id="subcat-D">
                     <ul class="submenu1">
                         <li><a href="#" class="menu-link">Faux Florals</a></li>
                         <li><a href="#" class="menu-link">Kitchen Essentials</a></li>
@@ -157,6 +167,11 @@
                 <li><a href="#" class="menu-link">Exclusively betseys</a></li>
                 <li><a href="#" class="menu-link">Gift Cards</a></li>
                 <li><a href="#" class="menu-link showSM">Login / register</a></li>
+                <li>
+                    <a href="#" class="menu-link showSM">
+                        <img src="./assets/images/logo/logo.png" alt="shopbetseys">
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
